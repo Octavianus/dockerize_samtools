@@ -1,5 +1,5 @@
-### Dockermized SAMTools 1.0
-## This is Dockermized SAMTools without manual command.
+### Dockerized SAMTools 1.0
+## This is Dockerized SAMTools without manual command.
 
 # use the dockerfile/ubuntu base image provided by https://index.docker.io/u/dockerfile/ubuntu/
 # The environment is ubuntu-14.04
