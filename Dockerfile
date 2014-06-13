@@ -66,7 +66,13 @@ RUN make
 
 ## Step 4: Add the executable to PATH.
 ## Or change the CMD and ENTRYPOINT, we use the latter here.
-ENTRYPOINT ["/home/vagrant/samtools-0.1.19/samtools"]
+
+######## MODIFICATION, comment ENTRYPOIN. ADD ENV
+#ENTRYPOINT ["/home/vagrant/samtools-0.1.19/samtools"]
 #CMD ["/home/vagrant/samtools-0.1.19/samtools"]
+
+ENV PATH /home/vagrant/samtools-0.1.19:$PATH
+ENV PATH /home/vagrant/samtools-0.1.19/bcftools:$PATH
+ENV PATH /home/vagrant/samtools-0.1.19/misc:$PATH
 
 
